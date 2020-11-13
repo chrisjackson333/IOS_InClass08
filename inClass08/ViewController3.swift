@@ -25,7 +25,8 @@ class ViewController3: UIViewController {
     
     func getForecast(){
         let parameters: Parameters = [
-            "APPID": "39eb21bf630dd4303b2452032d841088",
+            //Enter your own openweathermap api key below
+            "APPID": "",
             "q": self.city!
         ]
         AF.request("http://api.openweathermap.org/data/2.5/forecast",
